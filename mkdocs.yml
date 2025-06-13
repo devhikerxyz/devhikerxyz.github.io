@@ -1,13 +1,13 @@
 #[Info]
 site_name: Devhiker'Website
-site_url: https://cxyhuky.github.io/
+site_url: https://devhikerxyz.github.io/
 site_author: devhiker
 
-copyright: Copyright &copy; 2025 devhiker
+copyright: Copyright &copy; 2025 Devhiker
 #[Config]
 #[Repo Config]
-repo_url: https://github.com/devhiker/cxyhuky.github.io 
-repo_name: devhiker.github.io
+repo_url: https://github.com/devhiker/devhikerxyz.github.io 
+repo_name: devhikerxyz.github.io
 
 #[扩展]
 extra:
@@ -20,7 +20,7 @@ extra:
           make our documentation better.
     social:
         - icon: fontawesome/brands/github
-          link: https://github.com/devhiker
+          link: https://github.com/devhikerxyz
 
         - icon: fontawesome/solid/paper-plane
           link: mailto:devhiker.xyz@gmail.com
@@ -45,7 +45,7 @@ markdown_extensions:
 theme:
     name: 'material'                            #主题名
     favicon: assets/logo/cxyhuky-icon.png
-    language: zh
+    language: en
     palette:
         primary: indigo
     custom_dir: docs/templates
@@ -53,6 +53,8 @@ theme:
         logo: material/state-machine
         repo: fontawesome/brands/github         #指定仓库图标
     features:
+        - search.suggest  # 启用搜索建议
+        - search.highlight  # 启用搜索高亮
         - navigation.tabs                       #在header中添加导航条
         - navigation.tabs.sticky
         - navigation.top                        #回到顶部 
@@ -61,7 +63,6 @@ theme:
         - navigation.indexes
         - navigation.prune
         - navigation.sections
-        - search.suggest
         - content.code.annotate
 
 plugins:

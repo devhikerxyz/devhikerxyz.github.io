@@ -1,3 +1,5 @@
-.md-nav--primary .md-nav__item:has(a[href*="blog"]) {
+
+/* 隐藏移动端菜单按钮 */
+.md-tabs{
   display: none;
 }
