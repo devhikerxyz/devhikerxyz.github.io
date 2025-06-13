@@ -1,0 +1,3 @@
+.md-nav--primary .md-nav__item:has(a[href*="blog"]) {
+  display: none;
+}

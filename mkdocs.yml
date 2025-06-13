@@ -1,13 +1,13 @@
 #[Info]
-site_name: CXYHUKY
+site_name: Devhiker'Website
 site_url: https://cxyhuky.github.io/
-site_author: Kangying Hu
+site_author: devhiker
 
-copyright: Copyright &copy; 2025 Kangying Hu
+copyright: Copyright &copy; 2025 devhiker
 #[Config]
 #[Repo Config]
-repo_url: https://github.com/cxyhuky/cxyhuky.github.io 
-repo_name: Kangying Hu's Blog
+repo_url: https://github.com/devhiker/cxyhuky.github.io 
+repo_name: devhiker.github.io
 
 #[扩展]
 extra:
@@ -20,10 +20,10 @@ extra:
           make our documentation better.
     social:
         - icon: fontawesome/brands/github
-          link: https://github.com/cxyhuky
+          link: https://github.com/devhiker
 
         - icon: fontawesome/solid/paper-plane
-          link: mailto:cxyhuky@gmail.com
+          link: mailto:devhiker.xyz@gmail.com
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -82,30 +82,10 @@ plugins:
 #       bib_file: "docs/references.bib"
 #       csl_file: "docs/ieee.csl"
 #       cite_inline: false
-        
+
+extra_css:
+  - css/extra.css  # 加载自定义 CSS
 
 nav:
-    - Abount: index.md 
-    - Computer Science:
-        - cs/index.md
-        - Network:
-            - cs/network/application-layer.md
-            - cs/network/data-link-layer.md
-        - OS:
-            - cs/os/learn.md
-    - Reading:
-        - reading/index.md
-        - EffectiveJava:
-            - reading/effectivejava/methods-common-to-all-objects.md
-        - 图解HTTP:
-            - reading/httpdiagram/created.md
-        - 计算机网络（自顶向下方法）:
-            - reading/computer-newworking(a-top-down-approach)/video-stream-and-cdn.md
-    - Software Engineering:
-        - se/index.md
-        - 中间件:
-          - Redis:
-            - se/middleware/redis/disk-persistence.md
-            - se/middleware/redis/sentinel.md
-    - Blog:
-        - blog/index.md
+- Blog:
+    - blog/index.md
