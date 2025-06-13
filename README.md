@@ -2,5 +2,5 @@ Growing...
 
 ## devhiker's website
 
-https://cxyhuky.cn
+https://devhiker.xyz
 
