@@ -1,18 +1,34 @@
-me: publish site
-on: # 在什么时候触发工作流
-  push: # 在从本地main分支被push到GitHub仓库时
+name: Deploy Documentation
+
+on:
+  push:
     branches:
-      - main
-  pull_request: # 在main分支合并别人提的pr时
-    branches:
-      - main
-jobs: # 工作流的具体内容
+      - main  # 推送到main分支时触发
+  workflow_dispatch:  # 可选：允许手动触发
+
+jobs:
   deploy:
-    runs-on: ubuntu-latest # 创建一个新的云端虚拟机 使用最新Ubuntu系统
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2 # 先checkout到main分支
-      - uses: actions/setup-python@v2 # 再安装Python3和相关环境
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.x
-      - run: pip install mkdocs-material # 使用pip包管理工具安装mkdocs-material
-      - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
+          python-version: '3.10'  # 推荐使用稳定版本
+
+      - name: Install dependencies
+        run: pip install mkdocs-material
+
+      - name: Verify CNAME
+        run: |
+          if [ ! -f docs/CNAME ]; then
+            echo "Error: docs/CNAME file missing!" >&2
+            exit 1
+          fi
+
+      - name: Build and Deploy
+        run: mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 自动注入的token

@@ -1,16 +1,18 @@
 #[Info]
-site_name: Devhiker'Website
-site_url: https://devhikerxyz.github.io/
+site_name: Devhiker's Website
+site_url: https://devhiker.xyz
 site_author: devhiker
 
 copyright: Copyright &copy; 2025 Devhiker
 #[Config]
 #[Repo Config]
-repo_url: https://github.com/devhiker/devhikerxyz.github.io 
+repo_url: https://github.com/devhikerxyz/devhikerxyz.github.io 
 repo_name: devhikerxyz.github.io
 
 #[扩展]
 extra:
+    include:
+      - CNAME
     consent:
         title: Cookie consent
         description: >-
@@ -54,7 +56,6 @@ theme:
         repo: fontawesome/brands/github         #指定仓库图标
     features:
         - search.suggest  # 启用搜索建议
-        - search.highlight  # 启用搜索高亮
         - navigation.tabs                       #在header中添加导航条
         - navigation.tabs.sticky
         - navigation.top                        #回到顶部 
