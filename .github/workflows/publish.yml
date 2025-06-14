@@ -19,7 +19,7 @@ jobs:
           python-version: '3.10'  # 推荐使用稳定版本
 
       - name: Install dependencies
-        run: pip install mkdocs-material
+        run: pip install mkdocs-material mkdocs-autorefs mkdocs-rss-plugin
 
       - name: Verify CNAME
         run: |
