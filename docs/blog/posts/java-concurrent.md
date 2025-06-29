@@ -5,8 +5,8 @@ authors: [huyi]
 date: 2024-09-12
 slug: juc
 categories:
-  - 技术笔记
-  - 并发编程
+  - Engineering
+  - 终生学习
 ---
 
 关于悲观锁&乐观锁、CAS以及线程池的解析与总结笔记 <!-- more -->

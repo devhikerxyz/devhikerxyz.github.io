@@ -46,7 +46,7 @@ markdown_extensions:
 #[UI]
 theme:
     name: 'material'                            #主题名
-    favicon: assets/logo/cxyhuky-icon.png
+    favicon: assets/logo/devhikerxyz-logo.png
     language: en
     palette:
         primary: indigo
