@@ -1,0 +1,5 @@
+
+/* 隐藏移动端菜单按钮 */
+.md-tabs{
+  display: none;
+}
